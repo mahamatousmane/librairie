@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class commentaire extends Model
 {
     use HasFactory;
-    protected $fillable=['user_id','publication_id'];
+    protected $fillable=['user_id','publication_id','contenu_commentaire'];
     
 }

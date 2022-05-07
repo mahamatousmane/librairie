@@ -18,7 +18,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
-			CSS
+			CSS 
 			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -55,18 +55,18 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="{{url('front/accueil')}}">Home</a></li>
-				          <li><a href="#about">About</a></li>
-				          <li><a href="#service">Service</a></li>
-				          <li><a href="#unique">Unique Feature</a></li>
+				          <li class="menu-active"><a href="{{ route('accueil.index') }}">Accueil</a></li>
+				          <li><a href="{{route('service.index')}}">Nos Services</a></li>
+				          <li><a href="{{route('produit.index')}}">Nos Produit</a></li>
+				          <li><a href="#">S'inscrire</a></li>
 				          <li><a href="#review">Review</a></li>
-				          <li><a href="#faq">Faq</a></li>
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
 				              <li><a href="generic.html">Generic</a></li>
 				              <li><a href="elements.html">Elements</a></li>
 				            </ul>
 				          </li>
+				
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -74,8 +74,109 @@
 			  </header><!-- #header -->
 
 
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-10">
+							<h5 class="text-white text-uppercase">B i e n  V e n u  S u r   E l i b</h5> <br><br>
+							<h2>
+								VENTE - ACHAT - ECHANGE				
+							</h2>
+							<a href="#" class="primary-btn text-uppercase">Buy Now</a>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+						
+
 			@yield('content')
-		
+			
+
+
+
+
+
+
+
+			<!-- Start faq Area -->
+			<section class="faq-area section-gap" id="faq">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-10">
+							<div class="title text-center">
+								<h1 class="mb-10">Frequently Asked Questions</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row justify-content-start">
+						<div class="col-lg-6 faq-left">
+							<div id="accordion">
+							  <div class="card">
+							    <div class="card-header" id="headingOne">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							          Are your Templates responsive?
+							        </button>
+							      </h5>
+							    </div>
+
+							    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							      <div class="card-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="card">
+							    <div class="card-header" id="headingTwo">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							          Does it have all the plugin as mentioned?
+							        </button>
+							      </h5>
+							    </div>
+							    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							      <div class="card-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="card">
+							    <div class="card-header" id="headingThree">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							          Can i use the these theme for my client?
+							        </button>
+							      </h5>
+							    </div>
+							    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							      <div class="card-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="card">
+							    <div class="card-header" id="headingThree">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+							          Are your Templates responsive?
+							        </button>
+							      </h5>
+							    </div>
+							    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							      <div class="card-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+							      </div>
+							    </div>
+							  </div>							  
+							</div>							
+						</div>	
+					</div>
+				</div>	
+			</section>
+			<!-- End faq Area -->
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
 				<div class="container">
@@ -126,8 +227,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</footer>	
 			<!-- End footer Area -->	
-
-
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

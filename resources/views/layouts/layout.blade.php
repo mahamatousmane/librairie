@@ -18,7 +18,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
-			CSS
+			CSS 
 			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -55,12 +55,11 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="{{('front/accueil')}}">Home</a></li>
-				          <li><a href="#about">About</a></li>
-				          <li><a href="#service">Service</a></li>
+				          <li class="menu-active"><a href="{{ route('accueil.index') }}">Accueil</a></li>
+				          <li><a href="{{route('service.index')}}">Nos Services</a></li>
+				          <li><a href="#service">Nos Produit</a></li>
 				          <li><a href="#unique">Unique Feature</a></li>
 				          <li><a href="#review">Review</a></li>
-				          <li><a href="#faq">Faq</a></li>
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
 				              <li><a href="generic.html">Generic</a></li>
@@ -93,10 +92,10 @@
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-10">
-							<h5 class="text-white text-uppercase">Now you can feel the Heat</h5>
-							<h1>
-								Smart New Future				
-							</h1>
+							<h5 class="text-white text-uppercase">B i e n  V e n u  S u r   E l i b</h5> <br><br>
+							<h2>
+								VENTE - ACHAT - ECHANGE				
+							</h2>
 							<a href="#" class="primary-btn text-uppercase">Buy Now</a>
 						</div>											
 					</div>

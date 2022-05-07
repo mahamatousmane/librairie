@@ -1,6 +1,11 @@
 <?php
+//use App\Http\Controllers\PagesController;
 
+use App\Http\Controllers\AccueilController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProduitController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +22,30 @@ Route::get('/', function () {
     return view('layouts/layout');
 });
 
-Route::get('/accueil',function(){
-return view('front/accueil');
-});
-Route::get('apropos',function(){ return view('front/apropos');});
+// Route::get('/accueil', function(){
+//     return view('front/accueil');
+// })->name('accueil');
+
+Route::resource('accueil',AccueilController::class);
+Route::resource('service',ServiceController::class);
+Route::resource('produit',ProduitController::class);
+//Route::resource(('inscription',InscriptionController::class);
+
+// Route::get('apropos',function(){ 
+//     return view('front/apropos');
+// });
+
+
 
 
 Route::get('/dashboard', function () {
     return view('back/admin');
 })->middleware(['auth'])->name('dashboard');
 
+
+
+
+//Route::get('/accueil','PagesController@accueil');
+
 require __DIR__.'/auth.php';
+
