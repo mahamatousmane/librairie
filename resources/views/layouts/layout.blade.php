@@ -48,18 +48,17 @@
 
 
 			  <header id="header" id="home">
-			    <div class="container">
+			    <div class="container" style="color:red ;">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <img  src="img/logoElib4.png" alt="" title="" />
 				      </div>
-				      <nav id="nav-menu-container">
+				      <nav id="nav-menu-container"><br>
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="{{ route('accueil.index') }}">Accueil</a></li>
 				          <li><a href="{{route('service.index')}}">Nos Services</a></li>
 				          <li><a href="#service">Nos Produit</a></li>
-				          <li><a href="#unique">Unique Feature</a></li>
-				          <li><a href="#review">Review</a></li>
+				          <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">se connecter</a></li>
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
 				              <li><a href="generic.html">Generic</a></li>
@@ -92,7 +91,7 @@
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-10">
-							<h5 class="text-white text-uppercase">B i e n  V e n u  S u r   E l i b</h5> <br><br>
+							<h5 class="text-white text-uppercase">B i e n V e n u   S u r    E l i b</h5> <br><br>
 							<h2>
 								VENTE - ACHAT - ECHANGE				
 							</h2>
@@ -183,7 +182,7 @@
 				<div class="container-fluid">				
 					<div class="row justify-content-center align-items-center">
 						<div class="col-lg-6 no-padding home-about-left">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
+							<img class="img-fluid" src="img/abou-img.jpg" alt="">
 						</div>
 						<div class="col-lg-6 no-padding home-about-right">
 							<h1>Globally Connected <br>
