@@ -1,8 +1,8 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
+<!DOCTYPE html>
+	<html lang="fr" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="img/fav.png">
 		<!-- Author Meta -->
@@ -14,43 +14,70 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Watch</title>
+		<title>Librairie en lign</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
-			CSS
+			CSS 
 			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>
 
+        <!-- <div class="justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif -->
+
+
 			  <header id="header" id="home">
-			    <div class="container">
+			    <div class="container" style="color:red ;">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <img  src="img/logoElib4.png" alt="" title="" />
 				      </div>
-				      <nav id="nav-menu-container">
+				      <nav id="nav-menu-container"><br>
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Home</a></li>
-				          <li><a href="#about">About</a></li>
-				          <li><a href="#service">Service</a></li>
-				          <li><a href="#unique">Unique Feature</a></li>
-				          <li><a href="#review">Review</a></li>
-				          <li><a href="#faq">Faq</a></li>
+				          <li class="menu-active"><a href="{{ route('accueil.index') }}">Accueil</a></li>
+				          <li><a href="{{route('service.index')}}">Nos Services</a></li>
+				          <li><a href="#service">Nos Produit</a></li>
+				          <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">se connecter</a></li>
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
 				              <li><a href="generic.html">Generic</a></li>
 				              <li><a href="elements.html">Elements</a></li>
 				            </ul>
 				          </li>
+						  @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -63,10 +90,10 @@
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-10">
-							<h5 class="text-white text-uppercase">Now you can feel the Heat</h5>
-							<h1>
-								Smart New Future				
-							</h1>
+							<h5 class="text-white text-uppercase">B i e n V e n u   S u r    E l i b</h5> <br><br>
+							<h2>
+								VENTE - ACHAT - ECHANGE				
+							</h2>
 							<a href="#" class="primary-btn text-uppercase">Buy Now</a>
 						</div>											
 					</div>
@@ -154,7 +181,7 @@
 				<div class="container-fluid">				
 					<div class="row justify-content-center align-items-center">
 						<div class="col-lg-6 no-padding home-about-left">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
+							<img class="img-fluid" src="img/abou-img.jpg" alt="">
 						</div>
 						<div class="col-lg-6 no-padding home-about-right">
 							<h1>Globally Connected <br>
