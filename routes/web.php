@@ -19,7 +19,7 @@ use App\Http\Controllers\ServiceController;
 */
 
 Route::get('/', function () {
-    return view('layouts/layout');
+    return view('layouts/anclayout');
 });
 
 // Route::get('/accueil', function(){
@@ -31,7 +31,7 @@ Route::resource('service',ServiceController::class);
 Route::resource('produit',ProduitController::class);
 //Route::resource(('inscription',InscriptionController::class);
 
-// Route::get('apropos',function(){ 
+// Route::get('apropos',function(){
 //     return view('front/apropos');
 // });
 

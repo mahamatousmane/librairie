@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../src/styles/dist/output.css">
-	<link rel="stylesheet" href="css/output.css">					
+    <link rel="stylesheet" href="../src/styles/dist/output.css">
+    <link rel="stylesheet" href="css/output.css">
 
     <link rel="stylesheet" href="../src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>elib | Home</title>
 </head>
+
 <body>
     <!-- Tackling the project based on accessabilty -->
     <!-- Header section starts hers -->
@@ -18,7 +20,9 @@
         <div class="nav-wrapper tw-max-w-7xl tw-my-6 tw-mx-auto tw-flex tw-items-center">
             <nav class="nav tw-w-full">
                 <div class="row tw-flex tw-justify-between">
-                    <div class="col-2"><div class="logo"><img class="tw-ml-32" src="img/logoElib4.png" alt="first student on the banner"></div></div>
+                    <div class="col-2">
+                        <div class="logo"><img class="tw-ml-32" src="img/logoElib4.png" alt="first student on the banner"></div>
+                    </div>
                     <div class="col-2 tw-flex">
                         <div class="serch tw-relative">
                             <!-- The search bar -->
@@ -38,6 +42,20 @@
                                 <li class="margin-40"><a href="{{ route('produit.index') }}">Nos produits </a>
                                 </li>
                                 <li class="margin-40"><a href="#" class="tw-text-wild-red">Se connecter</a></li>
+                                @if (Route::has('login'))
+
+                                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                                    @auth
+                                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                                    @else
+                                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                                    @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                                    @endif
+                                    @endauth
+                                </div>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -217,6 +235,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

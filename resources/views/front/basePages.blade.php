@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../src/styles/dist/output.css">
-	<link rel="stylesheet" href="css/output.css">					
+	<link rel="stylesheet" href="css/output.css">
 
     <link rel="stylesheet" href="../src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>elib | Home</title>
@@ -63,7 +63,7 @@
     </header>
 @yield('content')
 
-    
+
 
         <!-- slider section -->
         <section class="slider-section tw-my-36">
@@ -87,7 +87,7 @@
             </div>
         </section>
 
-     
+
 
 
     <!-- Footer section -->
@@ -119,6 +119,6 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
