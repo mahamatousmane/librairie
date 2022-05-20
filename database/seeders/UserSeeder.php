@@ -28,25 +28,12 @@ class UserSeeder extends Seeder
             'active'=> 1,
             'etablissement_id' => 2,
         ]);
-        $user2 = User::create([
-            'name' => 'MK',
-            'email' => 'MK@admin.com',
-            'password' => 'password',
-            'active'=> 1
-        ]);
-        $user3 = User::create([
-            'name' => 'nelson',
-            'email' => 'nelson@admin.com',
-            'password' => 'password',
-            'active'=> 1
-        ]);
-       
+
+
+
         $user->assignRole('administrator');
         $user1->assignRole('Manager');
-        $user2->assignRole('Manager');
-        $user3->assignRole('Manager');
-        $user4->assignRole('Manager');
-        $user4->assignRole('Enseignant');
+       
 
     }
 }
