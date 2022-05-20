@@ -36,14 +36,15 @@ Route::resource('produit',ProduitController::class);
 // });
 
 
-
-
 Route::get('/dashboard', function () {
-    return view('back/admin');
+    return view('admin/admin');
 })->middleware(['auth'])->name('dashboard');
 
 
 
+//les routes pour le controllers Role et user
+Route::Resource('users', UsersController::class);
+Route::Resource('roles', RolesController::class);
 
 //Route::get('/accueil','PagesController@accueil');
 

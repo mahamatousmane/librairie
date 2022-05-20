@@ -58,10 +58,11 @@
                     <ul class="nav-menu">
 
                         <!-- The search bar -->
-                        <li><input type="search" name="search-book" id="search" class="tw-bg-d-gray-4 tw-rounded-3xl !tw-py-1">
+                        <li><input type="search" placeholder="Search" name="search-book" id="search" class="primary-btn text-uppercase" class="tw-bg-d-gray-4 tw-rounded-3xl !tw-py-1">
                             <i class="fa fa-search tw-absolute tw-top-[7px] tw-left-[170px] tw-text-native-blue"></i>
                         </li>
-                        <li class="menu-active"><a href="{{ route('accueil.index') }}">Accueil</a></li>
+                        
+                        <li class="menu-active"><a href="{{ route('accueil.index') }} "  >Accueil</a></li>
                         <li><a href="{{route('service.index')}}">Nos Services</a></li>
                         <li><a href="#service">Nos Produit</a></li>
                         <li class="menu-has-children"><a href=" ">Connexion</a>
@@ -70,27 +71,13 @@
                                 <li><a href="{{ url('/register') }}">S'inscrire</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('/login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline red">se connecter</a></li>
                         <!-- <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
 				              <li><a href="generic.html">Generic</a></li>
 				              <li><a href="elements.html">Elements</a></li>
 				            </ul>
 				          </li> -->
-                        @if (Route::has('login'))
 
-                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                            @auth
-                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                            @else
-                            <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                            @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                            @endif
-                            @endauth
-                        </div>
-                        @endif
 
                     </ul>
                 </nav><!-- #nav-menu-container -->
@@ -116,7 +103,7 @@
     <!-- End banner Area -->
 
     <!-- Start video-sec Area -->
-    
+
     <!-- End video-sec Area -->
 
     <!-- End home-about Area -->
@@ -382,82 +369,7 @@
     </section>
     <!-- End review Area -->
 
-    <!-- Start faq Area -->
-    <section class="faq-area section-gap" id="faq">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-60 col-lg-10">
-                    <div class="title text-center">
-                        <h1 class="mb-10">Frequently Asked Questions</h1>
-                        <p>Who are in extremely love with eco friendly system.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-start">
-                <div class="col-lg-6 faq-left">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Are your Templates responsive?
-                                    </button>
-                                </h5>
-                            </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Does it have all the plugin as mentioned?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Can i use the these theme for my client?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                        Are your Templates responsive?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- End faq Area -->
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
